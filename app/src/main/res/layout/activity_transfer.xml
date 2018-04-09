@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ke.co.dev.siundu344.emobi.ui.TransferActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/toolBarTransfer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarTransfer"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/transfer_funds"
+        android:id="@+id/textTransfer"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_alignStart="@+id/textTransfer"
+        android:layout_alignLeft="@+id/textTransfer"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="10dp"
+        android:hint="@string/receiving_account_number"
+        android:inputType="number|text"
+        android:gravity="center|start"
+        android:id="@+id/editTextReceive"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textTransfer"
+        android:layout_alignStart="@+id/textTransfer"
+        android:layout_alignLeft="@+id/textTransfer"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Amount to Send"
+        android:inputType="number|text"
+        android:gravity="center|start"
+        android:id="@+id/editTextAmount"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/editTextReceive"
+        android:layout_below="@+id/editTextReceive"
+        android:layout_alignRight="@+id/editTextReceive"
+        android:text="@string/send_funds"
+        android:id="@+id/btnSend"
+        android:background="#ddd"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>
