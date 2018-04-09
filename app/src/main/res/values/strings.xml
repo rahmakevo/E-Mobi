@@ -3,4 +3,12 @@
     <string name="welcome_to_emobi_app">Welcome to EMobi App</string>
     <string name="already_have_an_account">already have an account ?</string>
     <string name="need_a_new_account">need a new account ?</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="first_name_and_surname">First Name and Surname</string>
+    <string name="account_password">Account Password</string>
+    <string name="below_enter_you_personal_and_ban_info">Below Enter you Personal and Bank Info</string>
+    <string name="personal_bank_account_number">Personal Bank Account Number</string>
+    <string name="personal_id_passport_number">Personal ID/Passport Number</string>
+    <string name="personal_phone_number">Personal Phone Number</string>
+    <string name="create_account">create account</string>
 </resources>

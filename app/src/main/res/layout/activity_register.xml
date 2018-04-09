@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,4 +7,130 @@
     android:layout_height="match_parent"
     tools:context="ke.co.dev.siundu344.emobi.auth.RegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/toolBarReg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@+id/toolBarReg"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/create_a_new_account"
+        android:id="@+id/textRegCreate"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textRegCreate"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="@string/first_name_and_surname"
+        android:gravity="center|start"
+        android:inputType="textPersonName"
+        android:id="@+id/editTextRegNames"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextRegNames"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="Your Email"
+        android:gravity="center|start"
+        android:inputType="textEmailAddress"
+        android:id="@+id/editTextRegEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextRegEmail"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="@string/account_password"
+        android:gravity="center|start"
+        android:inputType="textPassword"
+        android:id="@+id/editTextRegPass"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRegPass"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_marginTop="5dp"
+        android:text="@string/below_enter_you_personal_and_ban_info"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:id="@+id/textRegInfo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textRegInfo"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="@string/personal_phone_number"
+        android:gravity="center|start"
+        android:inputType="number"
+        android:id="@+id/editTextRegNumber"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextRegNumber"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="@string/personal_id_passport_number"
+        android:gravity="center|start"
+        android:inputType="number"
+        android:id="@+id/editTextRegId"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextRegId"
+        android:layout_alignStart="@+id/textRegCreate"
+        android:layout_alignLeft="@+id/textRegCreate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:layout_marginTop="5dp"
+        android:hint="@string/personal_bank_account_number"
+        android:gravity="center|start"
+        android:inputType="text|number"
+        android:id="@+id/editTextRegAccNo"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/editTextRegNames"
+        android:layout_alignRight="@+id/editTextRegNames"
+        android:layout_below="@+id/editTextRegAccNo"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
