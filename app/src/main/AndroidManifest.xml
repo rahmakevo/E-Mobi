@@ -27,8 +27,12 @@
         <activity
             android:name=".auth.LoginActivity"
             android:parentActivityName=".ui.StartActivity" />
-        <activity android:name=".ui.BalanceActivity" />
-        <activity android:name=".ui.TransferActivity"></activity>
+        <activity
+            android:name=".ui.BalanceActivity"
+            android:parentActivityName=".ui.MainActivity"/>
+        <activity
+            android:name=".ui.TransferActivity"
+            android:parentActivityName=".ui.MainActivity" />
     </application>
 
 </manifest>
