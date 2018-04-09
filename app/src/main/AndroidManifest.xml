@@ -29,10 +29,11 @@
             android:parentActivityName=".ui.StartActivity" />
         <activity
             android:name=".ui.BalanceActivity"
-            android:parentActivityName=".ui.MainActivity"/>
+            android:parentActivityName=".ui.MainActivity" />
         <activity
             android:name=".ui.TransferActivity"
             android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.StatementActivity"></activity>
     </application>
 
 </manifest>
