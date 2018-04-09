@@ -68,10 +68,12 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            mLogDialog.dismiss();
                             Intent mLogIntent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(mLogIntent);
                             finish();
                         } else {
+                            mLogDialog.hide();
                             Toast.makeText(LoginActivity.this, "Please check your Internet Connectivity", Toast.LENGTH_SHORT).show();
                         }
                     }

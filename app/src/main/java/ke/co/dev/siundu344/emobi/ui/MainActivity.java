@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnTransfer = findViewById(R.id.btnTransfer);
+        btnTransfer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mIntent = new Intent(MainActivity.this, TransferActivity.class);
+                startActivity(mIntent);
+            }
+        });
+
     }
     // check if user is authenticated
     @Override

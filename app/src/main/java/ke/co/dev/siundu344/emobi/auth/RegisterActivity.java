@@ -105,15 +105,18 @@ public class RegisterActivity extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<Void> task) {
                                             // check if task is successful
                                             if (task.isSuccessful()) {
+                                                mRegDialog.dismiss();
                                                 Intent mRegIntent = new Intent(RegisterActivity.this, MainActivity.class);
                                                 startActivity(mRegIntent);
                                                 finish();
                                             } else {
+                                                mRegDialog.hide();
                                                 Toast.makeText(RegisterActivity.this, "Please check your Internet Connectivity", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
                         } else {
+                            mRegDialog.hide();
                             Toast.makeText(RegisterActivity.this, "Please check your Internet Connectivity", Toast.LENGTH_SHORT).show();
                         }
                     }
