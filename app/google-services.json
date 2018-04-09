@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835942710339",
+    "firebase_url": "https://emobi-e17f7.firebaseio.com",
+    "project_id": "emobi-e17f7",
+    "storage_bucket": "emobi-e17f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835942710339:android:d65e51401fee863c",
+        "android_client_info": {
+          "package_name": "ke.co.dev.siundu344.emobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835942710339-8c8dus7hqm03laf46hui48nfivatjr08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.dev.siundu344.emobi",
+            "certificate_hash": "13f8c5b08475dd0de345ba17cf72d4bcde454bb8"
+          }
+        },
+        {
+          "client_id": "835942710339-q37loq9ptgfk6oegockdcag9ktjrhn0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgOGfiVM6TEI-LEWoPMylflVLTF2Qv3i8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835942710339-q37loq9ptgfk6oegockdcag9ktjrhn0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
