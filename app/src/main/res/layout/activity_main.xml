@@ -10,4 +10,45 @@
         layout="@layout/app_bar_layout"
         android:id="@+id/toolBarMain"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolBarMain"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_to_emobi"
+        android:textSize="19sp"
+        android:id="@+id/textWelcomeMain"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textWelcomeMain"
+        android:layout_centerHorizontal="true"
+        android:text="@string/balance_enquiry"
+        android:id="@+id/btnBalance"
+        android:background="#ddd"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnBalance"
+        android:id="@+id/btnStatement"
+        android:layout_centerHorizontal="true"
+        android:background="#ddd"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="7dp"
+        android:text="@string/mini_statement"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnStatement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="#ddd"
+        android:text="transfer funds"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btnTransfer"/>
 </RelativeLayout>

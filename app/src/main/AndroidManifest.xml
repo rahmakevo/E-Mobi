@@ -24,7 +24,9 @@
         <activity
             android:name=".auth.RegisterActivity"
             android:parentActivityName=".ui.StartActivity" />
-        <activity android:name=".auth.LoginActivity"></activity>
+        <activity
+            android:name=".auth.LoginActivity"
+            android:parentActivityName=".ui.StartActivity"/>
     </application>
 
 </manifest>
