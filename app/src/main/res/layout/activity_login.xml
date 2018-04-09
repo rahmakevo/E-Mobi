@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.dev.siundu344.emobi.auth.LoginActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/toolBarLog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarLog"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/log_in_to_your_account"
+        android:id="@+id/textLogin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textLogin"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:hint="@string/account_email"
+        android:inputType="textEmailAddress"
+        android:gravity="center|start"
+        android:id="@+id/editTextLoginEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextLoginEmail"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_field"
+        android:hint="@string/account_password"
+        android:inputType="textPassword"
+        android:gravity="center|start"
+        android:id="@+id/editTextLoginPass"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editTextLoginPass"
+        android:layout_alignEnd="@+id/editTextLoginEmail"
+        android:layout_alignRight="@+id/editTextLoginEmail"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:text="@string/sign_in"
+        android:textColor="#fff"
+        android:id="@+id/btnLogin"/>
+
+</RelativeLayout>
