@@ -93,13 +93,11 @@ public class RegisterActivity extends AppCompatActivity {
                             FirebaseUser mUser = mAuth.getCurrentUser();
                             String mUid = mUser.getUid();
                             // store user data in its own child
-                            String mDate = DateFormat.getDateTimeInstance().format(new Date);
                             HashMap<String, String> mUserMap = new HashMap<>();
                             mUserMap.put("name", names);
                             mUserMap.put("phone", phone);
                             mUserMap.put("id", idPass);
                             mUserMap.put("acc", accNo);
-                            mUserMap.put("date", mDate);
                             mUserRef.child(mUid).setValue(mUserMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
