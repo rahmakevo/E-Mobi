@@ -26,7 +26,8 @@
             android:parentActivityName=".ui.StartActivity" />
         <activity
             android:name=".auth.LoginActivity"
-            android:parentActivityName=".ui.StartActivity"/>
+            android:parentActivityName=".ui.StartActivity" />
+        <activity android:name=".ui.BalanceActivity"></activity>
     </application>
 
 </manifest>

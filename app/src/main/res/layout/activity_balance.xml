@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.dev.siundu344.emobi.ui.BalanceActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/toolBarBalance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarBalance"
+        android:text="Starting Account Balance :"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:id="@+id/textAccBal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAccBal"
+        android:layout_alignStart="@+id/textAccBal"
+        android:id="@+id/textBal"
+        android:layout_alignLeft="@+id/textAccBal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textBal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_field"
+        android:hint="@string/compute_new_balance"
+        android:inputType="number"
+        android:gravity="center|start"
+        android:id="@+id/editTextBal"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editTextBal"
+        android:layout_alignEnd="@+id/editTextBal"
+        android:layout_alignRight="@+id/editTextBal"
+        android:layout_marginTop="7dp"
+        android:text="@string/compute"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btnCompute"/>
+
+</RelativeLayout>
