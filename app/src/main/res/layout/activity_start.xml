@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ke.co.dev.siundu344.emobi.ui.StartActivity">
+    tools:context="ke.co.dev.siundu344.emobi.ui.StartActivity"
+    android:background="@color/colorPrimary">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="19sp"
+        android:textColor="#fff"
+        android:text="@string/welcome_to_emobi_app"
+        android:id="@+id/textStartWelcome"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textStartWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/already_have_an_account"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:id="@+id/btnLogStart"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnLogStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="#ddd"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/need_a_new_account"
+        android:id="@+id/btnRegStart"/>
+
+</RelativeLayout>
