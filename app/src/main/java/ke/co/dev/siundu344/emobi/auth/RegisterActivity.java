@@ -98,6 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
                             mUserMap.put("phone", phone);
                             mUserMap.put("id", idPass);
                             mUserMap.put("acc", accNo);
+                            mUserMap.put("bal", "0.00");
                             mUserRef.child(mUid).setValue(mUserMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
